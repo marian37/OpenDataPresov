@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/datasetNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textSize="@dimen/title" />
+
+    <TextView
+        android:id="@+id/datasetDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/datasetDownloadBtn"
+        android:layout_alignBottom="@+id/datasetDownloadBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textSize="@dimen/caption" />
+
+    <Button
+        android:id="@+id/datasetDownloadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/datasetProgressBar"
+        android:layout_marginRight="@dimen/margin_right"
+        android:focusable="false" />
+
+    <ImageButton
+        android:id="@+id/datasetRemoveImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/datasetDownloadBtn"
+        android:layout_toLeftOf="@+id/datasetDownloadBtn"
+        android:layout_toStartOf="@+id/datasetDownloadBtn"
+        android:focusable="false"
+        android:src="@android:drawable/ic_menu_delete"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/datasetProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datasetNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.IntroActivity"
+    tools:showIn="@layout/app_bar_intro">
+
+    <ImageView
+        android:id="@+id/introImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/intro_image_view_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/erb_presov" />
+
+    <Button
+        android:id="@+id/introStartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introImageView"
+        android:layout_centerHorizontal="true"
+        android:onClick="introStartBtnOnClick"
+        android:text="@string/intro_start_btn_text" />
+
+    <Spinner
+        android:id="@+id/introSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/speedDialingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_speed_dialing_text"
+        android:layout_above="@+id/introSpinner"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

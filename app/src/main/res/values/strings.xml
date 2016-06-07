@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Open Data Prešov</string>
+
+    <string name="empty_string" translatable="false" />
+
+    <string name="navigation_drawer_open">Otvoriť</string>
+    <string name="navigation_drawer_close">Zatvoriť</string>
+
+    <string name="nav_home">Domov</string>
+    <string name="nav_header_text">Prešov Open Data katalóg</string>
+    <string name="nav_settings">Nastavenia</string>
+
+    <string name="intro_start_btn_text">Spravovať datasety</string>
+    <string name="manager_activity_title">Správca datasetov</string>
+
+    <string name="download_btn_update">Aktualizovať</string>
+    <string name="download_btn_download">Stiahnuť</string>
+    <string name="download_date">Stiahnuté: %1$s</string>
+
+    <string name="notification_download_successful">Dataset %1$s úspešne stiahnutý</string>
+    <string name="notification_download_failure">Zlyhalo sťahovanie datasetu %1$s</string>
+
+    <string name="dataset_not_downloaded">Ešte ste nestiahli tento dataset</string>
+
+    <string name="dataset_found_text">%1$d nájdených záznamov</string>
+    <string name="action_search">Hľadať…</string>
+
+    <string name="spinner_default_value">Vyberte si dataset…</string>
+
+    <string name="dataset_column_first" translatable="false">dataset%1$dfirst</string>
+    <string name="dataset_column_second" translatable="false">dataset%1$dsecond</string>
+    <string name="preference_main_column_title">Hlavný stĺpec</string>
+    <string name="preference_secondary_column_title">Vedľajší stĺpec</string>
+    <string name="intro_speed_dialing_text">Rýchla voľba</string>
+
+</resources>
